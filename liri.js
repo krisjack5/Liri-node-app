@@ -6,7 +6,7 @@ var spotify = require("spotify");
 var fs = require('fs');
 
 
-function options (){
+function pickOne (){
 
     inquirer.prompt([
         {
@@ -177,4 +177,4 @@ function options (){
     });
 };
 
-questionOptions ();
+pickOne ();
