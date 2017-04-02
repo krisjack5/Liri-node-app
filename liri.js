@@ -6,13 +6,13 @@ var spotify = require("spotify");
 var fs = require('fs');
 
 
-function questionOptions (){
+function options (){
 
     inquirer.prompt([
         {
             type: "list",
             message: "Pick an option",
-            choices: ["my-tweets", "spotify-this-song", "movie-this", "do-what-it-says", "exit"],
+            choices: ["my-tweets", "spotify-this-song", "movie-this", "do-what-it-says"],
             name: "selection"
         }
     ]).then(function(user) {
@@ -160,7 +160,7 @@ function questionOptions (){
                     console.log(songTitle);
                     spotify.search({ type: 'track', query: songTitle }, function(err, data) {
                         if ( err ) {
-                            console.log('Error occurred: ' + err);
+                            console.log('Something went wrong: ' + err);
                             return;
                         } else {
                             console.log("-------------------------------");
