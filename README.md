@@ -1,1 +1,1 @@
-# Liri-node-app
+Liri is a command line node application that takes in user input and returns data. Whether you're searching for a favorite movie, an amazing song, or my incredibly boring Twiiter history, Liri can make it happen!
